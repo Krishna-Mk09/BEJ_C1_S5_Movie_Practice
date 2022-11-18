@@ -9,4 +9,9 @@
 package com.niit.jdp.BEJ_C1_S5_Movie_Practice.Domain;
 
 public class Movie {
+    private String movieId;
+    private String movieName;
+    private String directorName;
+    private String actorName;
+
 }
