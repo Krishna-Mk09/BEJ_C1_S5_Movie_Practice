@@ -46,4 +46,9 @@ public class MovieServiceImpl implements MovieService {
     public Optional<Movie> fetchMovieById(int movieId) {
         return movieRepository.findById(movieId);
     }
+
+    @Override
+    public void updateMovie(int movieId, Movie movie) {
+        movieRepository.save(movie);
+    }
 }

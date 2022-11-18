@@ -5,7 +5,6 @@
  *
  */
 
-
 package com.niit.jdp.BEJ_C1_S5_Movie_Practice.Domain;
 
 import javax.persistence.Entity;
@@ -14,7 +13,7 @@ import javax.persistence.Id;
 @Entity
 public class Movie {
     @Id
-    private String movieId;
+    private int movieId;
     private String movieName;
     private String directorName;
     private String actorName;
@@ -22,18 +21,18 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(String movieId, String movieName, String directorName, String actorName) {
+    public Movie(int movieId, String movieName, String directorName, String actorName) {
         this.movieId = movieId;
         this.movieName = movieName;
         this.directorName = directorName;
         this.actorName = actorName;
     }
 
-    public String getMovieId() {
+    public int getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(String movieId) {
+    public void setMovieId(int movieId) {
         this.movieId = movieId;
     }
 
@@ -63,11 +62,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "Movie{" +
-                "movieId='" + movieId + '\'' +
-                ", movieName='" + movieName + '\'' +
-                ", directorName='" + directorName + '\'' +
-                ", actorName='" + actorName + '\'' +
-                '}';
+        return "Movie{" + "movieId='" + movieId + '\'' + ", movieName='" + movieName + '\'' + ", directorName='" + directorName + '\'' + ", actorName='" + actorName + '\'' + '}';
     }
 }

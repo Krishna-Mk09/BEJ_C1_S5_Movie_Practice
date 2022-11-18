@@ -13,4 +13,6 @@ public interface MovieService {
     List<Movie> fetchAllMovies();
 
     Optional<Movie> fetchMovieById(int movieId);
+
+    void updateMovie(int mid, Movie movie);
 }
