@@ -5,6 +5,7 @@ import com.niit.jdp.BEJ_C1_S5_Movie_Practice.Domain.Movie;
 import java.util.List;
 import java.util.Optional;
 
+// A service interface.
 public interface MovieService {
     Movie saveMovie(Movie movie);
 
