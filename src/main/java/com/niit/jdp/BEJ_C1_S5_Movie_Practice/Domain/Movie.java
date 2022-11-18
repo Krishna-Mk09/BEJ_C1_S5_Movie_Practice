@@ -8,7 +8,12 @@
 
 package com.niit.jdp.BEJ_C1_S5_Movie_Practice.Domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Movie {
+    @Id
     private String movieId;
     private String movieName;
     private String directorName;
